@@ -31,6 +31,54 @@ import {ModeToggle} from "@/components/ui/theme-switcher";
 import navitems from "@/config/navitems";
 
 export default function AppSidebar({ children }) {
+
+    const renderSidebarMenuItems = (item, index1) => {
+        if (item.items?.length > 0) {
+            return (
+                <Collapsible
+                    key={item.title}
+                    asChild
+                    defaultOpen={item.isActive}
+                    className="group/collapsible"
+                >
+                    <SidebarMenuItem>
+                        <CollapsibleTrigger asChild>
+                            <SidebarMenuButton tooltip={item.title}>
+                                <div className="min-h-4 min-w-4 text-center">{index1 + 1}</div>
+                                <span className="truncate">{item.title}</span>
+                                <ChevronRight className="ml-auto transition-transform duration-200 group-data-[state=open]/collapsible:rotate-90" />
+                            </SidebarMenuButton>
+                        </CollapsibleTrigger>
+                        <CollapsibleContent>
+                            <SidebarMenuSub>
+                                {item.items?.map((subItem, index2) => (
+                                    <SidebarMenuSubItem key={subItem.title}>
+                                        <SidebarMenuSubButton asChild>
+                                            <a href={subItem.url}>
+                                                <span>{String.fromCharCode(index2 + 97)} - {subItem.title}</span>
+                                            </a>
+                                        </SidebarMenuSubButton>
+                                    </SidebarMenuSubItem>
+                                ))}
+                            </SidebarMenuSub>
+                        </CollapsibleContent>
+                    </SidebarMenuItem>
+                </Collapsible>
+            )
+        } else {
+            return (
+                <SidebarMenuItem key={item.title}>
+                    <SidebarMenuButton asChild>
+                        <a href={item.url}>
+                            <div className="min-h-4 min-w-4 text-center">{index1 + 1}</div>
+                            <span className="truncate">{item.title}</span>
+                        </a>
+                    </SidebarMenuButton>
+                </SidebarMenuItem>
+            )
+        }
+    }
+
     return (
         <SidebarProvider>
             <Sidebar collapsible="icon">
@@ -39,35 +87,7 @@ export default function AppSidebar({ children }) {
                         <SidebarGroupLabel className="font-bold text-lg">Tutorial Next.js</SidebarGroupLabel>
                         <SidebarMenu>
                             {navitems.map((item, index1) => (
-                                <Collapsible
-                                    key={item.title}
-                                    asChild
-                                    defaultOpen={item.isActive}
-                                    className="group/collapsible"
-                                >
-                                    <SidebarMenuItem>
-                                        <CollapsibleTrigger asChild>
-                                            <SidebarMenuButton tooltip={item.title}>
-                                                <div className="min-h-4 min-w-4 text-center">{index1 + 1}</div>
-                                                <span className="truncate">{item.title}</span>
-                                                <ChevronRight className="ml-auto transition-transform duration-200 group-data-[state=open]/collapsible:rotate-90" />
-                                            </SidebarMenuButton>
-                                        </CollapsibleTrigger>
-                                        <CollapsibleContent>
-                                            <SidebarMenuSub>
-                                                {item.items?.map((subItem, index2) => (
-                                                    <SidebarMenuSubItem key={subItem.title}>
-                                                        <SidebarMenuSubButton asChild>
-                                                            <a href={subItem.url}>
-                                                                <span>{String.fromCharCode(index2 + 97)} - {subItem.title}</span>
-                                                            </a>
-                                                        </SidebarMenuSubButton>
-                                                    </SidebarMenuSubItem>
-                                                ))}
-                                            </SidebarMenuSub>
-                                        </CollapsibleContent>
-                                    </SidebarMenuItem>
-                                </Collapsible>
+                                renderSidebarMenuItems(item, index1)
                             ))}
                         </SidebarMenu>
                     </SidebarGroup>
