@@ -28,15 +28,16 @@ export default function Page() {
           <Image
             className="mx-auto rounded-md"
             src={`${getImagesBasePath()}/cmd_node_npm.png`}
-            width={500}
-            height={500}
+            width={250}
+            height={250}
             alt="cmd_npm"
           />
         </div>
         <p>
           Si están instalados, nos devolverá por pantalla el número de la
           versión que tenemos instalada: Si no los tenemos instalados, podremos
-          descárgalos desde su página web oficial: https://nodejs.org/
+          descárgalos desde su página web oficial:
+          <a href="https://nodejs.org/" target="_blank" className="ms-1 underline">https://nodejs.org/</a>
           <br />
           <br />
           2. Crear una app Next.js Para ello, abrimos terminal y escribimos el

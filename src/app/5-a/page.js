@@ -24,7 +24,7 @@ export default function Page() {
           <br />
           <br />
           Se pueden crear y organizar componentes de interfaz (como encabezados
-          y pies de página) A través del layout
+          y pies de página) a través del layout.
         </p>
       </div>
     </div>

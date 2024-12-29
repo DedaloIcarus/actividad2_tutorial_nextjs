@@ -13,18 +13,20 @@ export default function Page() {
           a las necesidades específicas de cada uno modificando los directorios
           y ficheros.
           <br />
-          Como ya es sabido, en el directorio app se encuentran las páginas que
+          Como ya es sabido, en el directorio{" "}
+          <span className="font-bold">app</span> se encuentran las páginas que
           componen la aplicación, por lo que editando estos archivos
           realizaremos cambios en las páginas.
           <br />
           También existe la posibilidad de personalizar la configuración del
-          framework modificando el fichero de configuración (next.config.js). Si
-          lo que se busca es colocar y/o editar componentes, se deberá modificar
-          el directorio components.
+          framework modificando el fichero de configuración{" "}
+          <span className="font-bold">(next.config.js)</span>. Si lo que se
+          busca es colocar y/o editar componentes, se deberá modificar el
+          directorio <span className="font-bold">components</span>.
           <br />
           Otro tipo de ficheros que se pueden editar y que actúan con el
-          framework, son los archivos CSS que aportan estilo a nuestra
-          aplicación.
+          framework, son los archivos <span className="font-bold">CSS</span> que
+          aportan estilo a nuestra aplicación.
         </p>
       </div>
     </div>

@@ -38,10 +38,20 @@ export default function Home() {
           <br />
           Una vez editado el archivo, se deben guardar los cambios e iniciar el
           servidor de desarrollo para visualizar el resultado en el navegador.
-          Para ello, se abre una terminal y se escribe el siguiente comando: npm
-          run dev Por último, abrir un navegador y escribir lo siguiente en la
-          barra de direcciones: Local: http://localhost:3000/ Con todo esto, ya
-          se puede ver &quot;Hola Mundo&quot; en el navegador.
+          Para ello, se abre una terminal y se escribe el siguiente comando:
+          <br />
+          <br />
+        </p>
+      </div>
+      <div className="rounded-md border px-4 py-2 font-mono text-sm shadow-sm w-[150px] mx-auto">
+        npm run dev
+      </div>
+      <div className="text-start">
+        <p>
+          <br />
+          Por último, abrir un navegador y escribir lo siguiente en la barra de
+          direcciones: Local: http://localhost:3000/ Con todo esto, ya se puede
+          ver &quot;Hola Mundo&quot; en el navegador.
         </p>
       </div>
     </div>
