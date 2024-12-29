@@ -71,8 +71,7 @@ export default function Page() {
                     </div>
                 </div>
                 <p>
-                    Con esto se iniciará el servidor en http://localhost:3000, y se podrá ver
-                    la página del ejemplo anterior, "Bienvenido a mi proyecto Next.js!"
+                    Con esto se iniciará el servidor en http://localhost:3000
                 </p>
             </div>
         </div>
