@@ -12,8 +12,6 @@ export function ModeToggle() {
         setTheme(resolvedTheme === "dark" ? "light" : "dark")
     }, [resolvedTheme, setTheme])
 
-
-
     return (
         <Button
             variant="ghost"
