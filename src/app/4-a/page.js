@@ -43,7 +43,7 @@ export default function Home() {
                         Por último, abre un navegador y escribe lo siguiente en la barra de direcciones:
                         Local: http://localhost:3000
 
-                        Con todo esto, ya podrás ver "Hola Mundo" en el navegador.
+                        Con todo esto, ya podrás ver &quot;Hola Mundo&quot; en el navegador.
                     </p>
                 </div>
             </div>
