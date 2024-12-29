@@ -37,7 +37,13 @@ export default function Page() {
           Si están instalados, nos devolverá por pantalla el número de la
           versión que tenemos instalada: Si no los tenemos instalados, podremos
           descárgalos desde su página web oficial:
-          <a href="https://nodejs.org/" target="_blank" className="ms-1 underline">https://nodejs.org/</a>
+          <a
+            href="https://nodejs.org/"
+            target="_blank"
+            className="ms-1 underline"
+          >
+            https://nodejs.org/
+          </a>
           <br />
           <br />
           2. Crear una app Next.js Para ello, abrimos terminal y escribimos el
