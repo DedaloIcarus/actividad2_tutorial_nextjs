@@ -11,11 +11,10 @@ export default function Page() {
         <p>
           Al crear una aplicación en Next.js con create-next-app, todo ya está
           configurado y listo. Para crear una aplicación simple de &quot;Hola
-          Mundo&quot;, simplemente puedes editar el archivo app/page.js.
-          <br />
-          Con un editor de código (como Visual Studio Code, por ejemplo), abre
-          el archivo y modifícalo para agregar el texto &quot;Hola Mundo&quot;
-          de la siguiente manera:
+          Mundo&quot;, simplemente se puede editar el archivo app/page.js. Con
+          un editor de código (como Visual Studio Code, por ejemplo), se abre el
+          archivo y se modifica para agregar el texto &quot;Hola Mundo&quot; de
+          la siguiente manera:
           <br />
           <br />
         </p>
@@ -37,12 +36,12 @@ export default function Home() {
       <div className="text-start">
         <p>
           <br />
-          Una vez editado el archivo, guarda los cambios e inicia el servidor de
-          desarrollo para visualizarlo en el navegador. Para ello, abre una
-          terminal y escribe el siguiente comando: npm run dev Por último, abre
-          un navegador y escribe lo siguiente en la barra de direcciones: Local:
-          http://localhost:3000 Con todo esto, ya podrás ver &quot;Hola
-          Mundo&quot; en el navegador.
+          Una vez editado el archivo, se deben guardar los cambios e iniciar el
+          servidor de desarrollo para visualizar el resultado en el navegador.
+          Para ello, se abre una terminal y se escribe el siguiente comando: npm
+          run dev Por último, abrir un navegador y escribir lo siguiente en la
+          barra de direcciones: Local: http://localhost:3000/ Con todo esto, ya
+          se puede ver &quot;Hola Mundo&quot; en el navegador.
         </p>
       </div>
     </div>
