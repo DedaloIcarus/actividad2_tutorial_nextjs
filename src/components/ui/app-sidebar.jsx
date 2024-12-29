@@ -32,93 +32,112 @@ import {
     SidebarTrigger,
 } from "@/components/ui/sidebar"
 
-// This is sample data.
 const data = {
     navMain: [
         {
-            title: "Playground",
+            title: "Justificación del Framework Next.js",
             url: "#",
             icon: SquareTerminal,
             isActive: true,
             items: [
                 {
-                    title: "History",
+                    title: "¿Para qué sirve?",
                     url: "#",
                 },
                 {
-                    title: "Starred",
+                    title: "¿Qué aplicaciones tiene?",
                     url: "#",
                 },
                 {
-                    title: "Settings",
+                    title: "¿Sobre qué lenguajes se apoya?",
+                    url: "#",
+                },
+                {
+                    title: "¿Qué prerrequisitos necesita?",
                     url: "#",
                 },
             ],
         },
         {
-            title: "Models",
+            title: "Instalación",
             url: "#",
             icon: Bot,
             items: [
                 {
-                    title: "Genesis",
+                    title: "¿Se precisa instalación?",
                     url: "#",
                 },
                 {
-                    title: "Explorer",
+                    title: "¿Qué pasos hay que realizar para realizar la instalación?",
                     url: "#",
                 },
                 {
-                    title: "Quantum",
+                    title: "¿Versiones necesarias?",
+                    url: "#",
+                },
+                {
+                    title: "¿Rutas para tener en cuenta?",
+                    url: "#",
+                },
+                {
+                    title: "¿Variables de entorno?",
+                    url: "#",
+                },
+                {
+                    title: "¿Necesita base de datos?",
                     url: "#",
                 },
             ],
         },
         {
-            title: "Documentation",
+            title: "Primeros pasos",
             url: "#",
             icon: BookOpen,
             items: [
                 {
-                    title: "Introduction",
-                    url: "#",
-                },
-                {
-                    title: "Get Started",
-                    url: "#",
-                },
-                {
-                    title: "Tutorials",
-                    url: "#",
-                },
-                {
-                    title: "Changelog",
+                    title: "Cómo realizar una primera aproximación (“Hola Mundo”)",
                     url: "#",
                 },
             ],
         },
         {
-            title: "Settings",
+            title: "Utilización del Framework",
             url: "#",
             icon: Settings2,
             items: [
                 {
-                    title: "General",
+                    title: "¿Cómo empezar a crear una aplicación base?",
                     url: "#",
                 },
                 {
-                    title: "Team",
+                    title: "¿Cómo visualizar los resultados de la ejecución?",
+                    url: "#",
+                },
+                
+            ],
+        },
+        {
+            title: "Explicación del funcionamiento del Framework Next.js",
+            url: "#",
+            icon: BookOpen,
+            items: [
+                {
+                    title: "¿Actúa sobre páginas, ficheros, secciones…?",
                     url: "#",
                 },
                 {
-                    title: "Billing",
+                    title: "¿Cómo se editan/modifican los ficheros que actúan en el framework?",
                     url: "#",
                 },
                 {
-                    title: "Limits",
+                    title: "¿Cómo se referencian los ficheros creados desde otras aplicaciones (si es el caso)?",
                     url: "#",
                 },
             ],
+        },
+        {
+            title: "Conclusiones del tutorial",
+            url: "#",
         },
     ],
 }
@@ -129,9 +148,9 @@ export default function AppSidebar({ children }) {
             <Sidebar collapsible="icon">
                 <SidebarContent>
                     <SidebarGroup>
-                        <SidebarGroupLabel>Platform</SidebarGroupLabel>
+                        <SidebarGroupLabel className="font-bold text-lg">Tutorial Next.js</SidebarGroupLabel>
                         <SidebarMenu>
-                            {data.navMain.map((item) => (
+                            {data.navMain.map((item, index1) => (
                                 <Collapsible
                                     key={item.title}
                                     asChild
@@ -141,18 +160,18 @@ export default function AppSidebar({ children }) {
                                     <SidebarMenuItem>
                                         <CollapsibleTrigger asChild>
                                             <SidebarMenuButton tooltip={item.title}>
-                                                {item.icon && <item.icon />}
-                                                <span>{item.title}</span>
+                                                <div className="min-h-4 min-w-4 text-center">{index1 + 1}</div>
+                                                <span className="truncate">{item.title}</span>
                                                 <ChevronRight className="ml-auto transition-transform duration-200 group-data-[state=open]/collapsible:rotate-90" />
                                             </SidebarMenuButton>
                                         </CollapsibleTrigger>
                                         <CollapsibleContent>
                                             <SidebarMenuSub>
-                                                {item.items?.map((subItem) => (
+                                                {item.items?.map((subItem, index2) => (
                                                     <SidebarMenuSubItem key={subItem.title}>
                                                         <SidebarMenuSubButton asChild>
                                                             <a href={subItem.url}>
-                                                                <span>{subItem.title}</span>
+                                                                <span>{String.fromCharCode(index2 + 97)} - {subItem.title}</span>
                                                             </a>
                                                         </SidebarMenuSubButton>
                                                     </SidebarMenuSubItem>
