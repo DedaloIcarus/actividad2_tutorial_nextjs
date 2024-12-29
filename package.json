@@ -1,12 +1,15 @@
 {
   "name": "actividad2_tutorial_nextjs",
   "version": "0.1.0",
+  "homepage": "https://DedaloIcarus.github.io/actividad2_tutorial_nextjs",
   "private": true,
   "scripts": {
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d out"
   },
   "dependencies": {
     "@radix-ui/react-collapsible": "^1.1.2",
@@ -29,6 +32,7 @@
     "@eslint/eslintrc": "^3",
     "eslint": "^9",
     "eslint-config-next": "15.1.3",
+    "gh-pages": "^6.2.0",
     "postcss": "^8",
     "tailwindcss": "^3.4.1"
   }
