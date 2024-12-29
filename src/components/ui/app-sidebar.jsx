@@ -1,4 +1,7 @@
-"use client"
+"use client";
+
+import Link from 'next/link'
+import {usePathname} from 'next/navigation'
 
 import * as React from "react"
 import {
@@ -29,6 +32,7 @@ import {
 } from "@/components/ui/sidebar"
 import {ModeToggle} from "@/components/ui/theme-switcher";
 import navitems from "@/config/navitems";
+import Transition from "@/components/transition";
 
 export default function AppSidebar({ children }) {
 
@@ -54,9 +58,9 @@ export default function AppSidebar({ children }) {
                                 {item.items?.map((subItem, index2) => (
                                     <SidebarMenuSubItem key={subItem.title}>
                                         <SidebarMenuSubButton asChild>
-                                            <a href={subItem.url}>
+                                            <Link href={subItem.url}>
                                                 <span>{String.fromCharCode(index2 + 97)} - {subItem.title}</span>
-                                            </a>
+                                            </Link>
                                         </SidebarMenuSubButton>
                                     </SidebarMenuSubItem>
                                 ))}
@@ -69,10 +73,10 @@ export default function AppSidebar({ children }) {
             return (
                 <SidebarMenuItem key={item.title}>
                     <SidebarMenuButton asChild>
-                        <a href={item.url}>
+                        <Link href={item.url}>
                             <div className="min-h-4 min-w-4 text-center">{index1 + 1}</div>
                             <span className="truncate">{item.title}</span>
-                        </a>
+                        </Link>
                     </SidebarMenuButton>
                 </SidebarMenuItem>
             )
@@ -104,7 +108,9 @@ export default function AppSidebar({ children }) {
                 </header>
                 <div className="flex flex-1 flex-col gap-4 p-4 pt-0">
                     <div className="min-h-[100vh] flex-1 rounded-xl bg-muted/50 md:min-h-min">
-                        {children}
+                        <Transition key={usePathname()}>
+                            {children}
+                        </Transition>
                     </div>
                 </div>
             </SidebarInset>
