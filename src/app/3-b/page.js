@@ -1,5 +1,6 @@
 import navitems from "@/config/navitems";
 import Image from 'next/image'
+import getImagesBasePath from "@/lib/images-loader";
 
 export default function Page() {
     return (
@@ -26,7 +27,7 @@ export default function Page() {
                     </div>
                     <Image
                         className="mx-auto rounded-md"
-                        src="/cmd_node_npm.png"
+                        src={`${getImagesBasePath()}/cmd_node_npm.png`}
                         width={500}
                         height={500}
                         alt="cmd_npm"
@@ -51,7 +52,7 @@ export default function Page() {
                     </div>
                     <Image
                         className="mx-auto rounded-md"
-                        src="/cmd_create-next-app.png"
+                        src={`${getImagesBasePath()}/cmd_create-next-app.png`}
                         width={500}
                         height={500}
                         alt="cmd_create-next-app"
