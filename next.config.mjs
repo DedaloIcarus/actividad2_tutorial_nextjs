@@ -6,7 +6,6 @@ const nextConfig = {
     images: {
         unoptimized: true,
     },
-    assetPrefix: isProd ? '/actividad2_tutorial_nextjs/' : '',
     basePath: isProd ? '/actividad2_tutorial_nextjs' : '',
 };
 

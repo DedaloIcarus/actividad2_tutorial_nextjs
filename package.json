@@ -1,15 +1,14 @@
 {
   "name": "actividad2_tutorial_nextjs",
   "version": "0.1.0",
-  "homepage": "https://DedaloIcarus.github.io/actividad2_tutorial_nextjs",
+  "homepage": "https://dedaloicarus.github.io/actividad2_tutorial_nextjs",
   "private": true,
   "scripts": {
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d out"
+    "deploy": "npm run build && touch ./out/.nojekyll && gh-pages -d out -t true"
   },
   "dependencies": {
     "@radix-ui/react-collapsible": "^1.1.2",
