@@ -2,11 +2,7 @@
 
 import * as React from "react"
 import {
-    BookOpen,
-    Bot,
     ChevronRight,
-    Settings2,
-    SquareTerminal,
 } from "lucide-react"
 
 import {
@@ -32,116 +28,7 @@ import {
     SidebarTrigger,
 } from "@/components/ui/sidebar"
 import {ModeToggle} from "@/components/ui/theme-switcher";
-
-const data = {
-    navMain: [
-        {
-            title: "Justificación del Framework Next.js",
-            url: "#",
-            icon: SquareTerminal,
-            isActive: true,
-            items: [
-                {
-                    title: "¿Para qué sirve?",
-                    url: "#",
-                },
-                {
-                    title: "¿Qué aplicaciones tiene?",
-                    url: "#",
-                },
-                {
-                    title: "¿Sobre qué lenguajes se apoya?",
-                    url: "#",
-                },
-                {
-                    title: "¿Qué prerrequisitos necesita?",
-                    url: "#",
-                },
-            ],
-        },
-        {
-            title: "Instalación",
-            url: "#",
-            icon: Bot,
-            items: [
-                {
-                    title: "¿Se precisa instalación?",
-                    url: "#",
-                },
-                {
-                    title: "¿Qué pasos hay que realizar para realizar la instalación?",
-                    url: "#",
-                },
-                {
-                    title: "¿Versiones necesarias?",
-                    url: "#",
-                },
-                {
-                    title: "¿Rutas para tener en cuenta?",
-                    url: "#",
-                },
-                {
-                    title: "¿Variables de entorno?",
-                    url: "#",
-                },
-                {
-                    title: "¿Necesita base de datos?",
-                    url: "#",
-                },
-            ],
-        },
-        {
-            title: "Primeros pasos",
-            url: "#",
-            icon: BookOpen,
-            items: [
-                {
-                    title: "Cómo realizar una primera aproximación (“Hola Mundo”)",
-                    url: "#",
-                },
-            ],
-        },
-        {
-            title: "Utilización del Framework",
-            url: "#",
-            icon: Settings2,
-            items: [
-                {
-                    title: "¿Cómo empezar a crear una aplicación base?",
-                    url: "#",
-                },
-                {
-                    title: "¿Cómo visualizar los resultados de la ejecución?",
-                    url: "#",
-                },
-                
-            ],
-        },
-        {
-            title: "Explicación del funcionamiento del Framework Next.js",
-            url: "#",
-            icon: BookOpen,
-            items: [
-                {
-                    title: "¿Actúa sobre páginas, ficheros, secciones…?",
-                    url: "#",
-                },
-                {
-                    title: "¿Cómo se editan/modifican los ficheros que actúan en el framework?",
-                    url: "#",
-                },
-                {
-                    title: "¿Cómo se referencian los ficheros creados desde otras aplicaciones (si es el caso)?",
-                    url: "#",
-                },
-            ],
-        },
-        {
-            title: "Conclusiones del tutorial",
-            url: "#",
-        },
-    ],
-}
+import navitems from "@/config/navitems";
 
 export default function AppSidebar({ children }) {
     return (
@@ -151,7 +38,7 @@ export default function AppSidebar({ children }) {
                     <SidebarGroup>
                         <SidebarGroupLabel className="font-bold text-lg">Tutorial Next.js</SidebarGroupLabel>
                         <SidebarMenu>
-                            {data.navMain.map((item, index1) => (
+                            {navitems.map((item, index1) => (
                                 <Collapsible
                                     key={item.title}
                                     asChild
