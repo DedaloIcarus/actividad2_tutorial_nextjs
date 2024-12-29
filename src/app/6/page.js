@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <div className="text-center p-10">
       <div className="flex flex-col gap-2 mb-10">
-        <h1 className="text-3xl">7 - {navitems[6].title}</h1>
+        <h1 className="text-3xl">6 - {navitems[5].title}</h1>
       </div>
       <div className="text-start">
         <p>

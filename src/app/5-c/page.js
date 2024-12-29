@@ -4,8 +4,8 @@ export default function Page() {
   return (
     <div className="text-center p-10">
       <div className="flex flex-col gap-2 mb-10">
-        <h1 className="text-3xl">6 - {navitems[5].title}</h1>
-        <h5 className="text-xl">c - {navitems[5].items[2].title}</h5>
+        <h1 className="text-3xl">5 - {navitems[4].title}</h1>
+        <h5 className="text-xl">c - {navitems[4].items[2].title}</h5>
       </div>
       <div className="text-start">
         <p>
