@@ -1,18 +1,24 @@
 1:"$Sreact.fragment"
-2:I[8610,["693","static/chunks/693-01bcde91888a7393.js","942","static/chunks/942-de11b911ca175f68.js","177","static/chunks/app/layout-f97a2f96a77b0882.js"],"ThemeProvider"]
-3:I[2730,["693","static/chunks/693-01bcde91888a7393.js","942","static/chunks/942-de11b911ca175f68.js","177","static/chunks/app/layout-f97a2f96a77b0882.js"],"default"]
-4:I[5244,[],""]
-5:I[3866,[],""]
-6:I[7033,[],"ClientPageRoot"]
-7:I[6650,["693","static/chunks/693-01bcde91888a7393.js","974","static/chunks/app/page-143a7e43cedc339e.js"],"default"]
-a:I[6213,[],"OutletBoundary"]
-c:I[6213,[],"MetadataBoundary"]
-e:I[6213,[],"ViewportBoundary"]
-10:I[4835,[],""]
-:HL["/actividad2_tutorial_nextjs/_next/static/css/2383b9b337175c6b.css","style"]
-0:{"P":null,"b":"SfOelvToEBCZULxgFRhCq","p":"/actividad2_tutorial_nextjs","c":["",""],"i":false,"f":[[["",{"children":["__PAGE__",{}]},"$undefined","$undefined",true],["",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/actividad2_tutorial_nextjs/_next/static/css/2383b9b337175c6b.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","html",null,{"lang":"en","suppressHydrationWarning":true,"children":["$","body",null,{"className":"__variable_ada439 __variable_c6b23d antialiased","children":["$","$L2",null,{"attribute":"class","defaultTheme":"system","enableSystem":true,"disableTransitionOnChange":true,"children":["$","$L3",null,{"children":["$","$L4",null,{"parallelRouterKey":"children","segmentPath":["children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[],[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]]],"forbidden":"$undefined","unauthorized":"$undefined"}]}]}]}]}]]}],{"children":["__PAGE__",["$","$1","c",{"children":[["$","$L6",null,{"Component":"$7","searchParams":{},"params":{},"promises":["$@8","$@9"]}],null,["$","$La",null,{"children":"$Lb"}]]}],{},null,false]},null,false],["$","$1","h",{"children":[null,["$","$1","trVlKWguNe98F7sLpk1Pz",{"children":[["$","$Lc",null,{"children":"$Ld"}],["$","$Le",null,{"children":"$Lf"}],null]}]]}],false]],"m":"$undefined","G":["$10","$undefined"],"s":false,"S":true}
+2:I[3273,["355","static/chunks/355-e9bf0f1ca5b16752.js","490","static/chunks/490-2c5b7f8c799dedbc.js","177","static/chunks/app/layout-0ae1d0a26fae6cb1.js"],"ThemeProvider"]
+3:I[6485,["355","static/chunks/355-e9bf0f1ca5b16752.js","490","static/chunks/490-2c5b7f8c799dedbc.js","177","static/chunks/app/layout-0ae1d0a26fae6cb1.js"],"default"]
+4:I[7555,[],""]
+5:I[1295,[],""]
+6:I[894,[],"ClientPageRoot"]
+7:I[3288,["355","static/chunks/355-e9bf0f1ca5b16752.js","974","static/chunks/app/page-8f2fc91be83f8533.js"],"default"]
+a:I[9665,[],"MetadataBoundary"]
+c:I[9665,[],"OutletBoundary"]
+f:I[4911,[],"AsyncMetadataOutlet"]
+11:I[9665,[],"ViewportBoundary"]
+13:I[6614,[],""]
+:HL["/actividad2_tutorial_nextjs/_next/static/css/aaf0627f13ab7914.css","style"]
+0:{"P":null,"b":"KVEXKMztbjzOra0gITzk-","p":"/actividad2_tutorial_nextjs","c":["",""],"i":false,"f":[[["",{"children":["__PAGE__",{}]},"$undefined","$undefined",true],["",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/actividad2_tutorial_nextjs/_next/static/css/aaf0627f13ab7914.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","html",null,{"lang":"en","suppressHydrationWarning":true,"children":["$","body",null,{"className":"__variable_1d0fd1 __variable_26ebe6 antialiased","children":["$","$L2",null,{"attribute":"class","defaultTheme":"system","enableSystem":true,"disableTransitionOnChange":true,"children":["$","$L3",null,{"children":["$","$L4",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}]}]}]}]]}],{"children":["__PAGE__",["$","$1","c",{"children":[["$","$L6",null,{"Component":"$7","searchParams":{},"params":{},"promises":["$@8","$@9"]}],["$","$La",null,{"children":"$Lb"}],null,["$","$Lc",null,{"children":["$Ld","$Le",["$","$Lf",null,{"promise":"$@10"}]]}]]}],{},null,false]},null,false],["$","$1","h",{"children":[null,["$","$1","KTgIU-bCNaJSacQxY0ql9",{"children":[["$","$L11",null,{"children":"$L12"}],null]}],null]}],false]],"m":"$undefined","G":["$13","$undefined"],"s":false,"S":true}
+14:"$Sreact.suspense"
+15:I[4911,[],"AsyncMetadata"]
 8:{}
 9:{}
-f:[["$","meta","0",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
-d:[["$","meta","0",{"charSet":"utf-8"}],["$","title","1",{"children":"Create Next App"}],["$","meta","2",{"name":"description","content":"Generated by create next app"}],["$","link","3",{"rel":"icon","href":"/actividad2_tutorial_nextjs/favicon.ico","type":"image/x-icon","sizes":"16x16"}]]
-b:null
+b:["$","$14",null,{"fallback":null,"children":["$","$L15",null,{"promise":"$@16"}]}]
+e:null
+12:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+d:null
+16:{"metadata":[["$","title","0",{"children":"Create Next App"}],["$","meta","1",{"name":"description","content":"Generated by create next app"}],["$","link","2",{"rel":"icon","href":"/actividad2_tutorial_nextjs/favicon.ico","type":"image/x-icon","sizes":"16x16"}]],"error":null,"digest":"$undefined"}
+10:{"metadata":"$16:metadata","error":null,"digest":"$undefined"}
